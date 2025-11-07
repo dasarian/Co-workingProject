@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Детали задачи{% endblock %}
+
+{% block content %}
+    <h2>Детали задачи</h2>
+
+    <p><strong>Название:</strong> {{ task.title }}</p>
+    <p><strong>Исполнитель:</strong> {{ task.assignee }}</p>
+    <p><strong>Дата постановки:</strong> {{ task.date_posted }}</p>
+    <p><strong>Дедлайн:</strong> {{ task.deadline }}</p>
+
+        <p><strong>Описание:</strong></p>
+        <p>{{ task.description }}</p>
+    </div>
+
+{% endblock %}

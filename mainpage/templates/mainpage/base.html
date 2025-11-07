@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Working</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>System "Co-Working"</h1>
+            {% include 'menu.html' %}
+        </div>
+    </header>
+
+    <main class="container content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2025, Co-working. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
