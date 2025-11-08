@@ -14,3 +14,9 @@ def show_task_page(request):
     }
 
     return render(request, 'mainpage/task_detail.html', context)
+
+def mainpage_main_page(request):
+    return render(
+        request,
+        'mainpage/task_detail.html'
+    )
